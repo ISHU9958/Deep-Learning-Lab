@@ -71,11 +71,11 @@ ResNet-18 is a deep convolutional network designed to overcome vanishing gradien
 
 ## Training/Validation Accuracy Graph:
 
-![Training/Validation Accuracy](Experiment3/accuracy_plot.png)
+![Training/Validation Accuracy](accuracy_plot.png)
 
 ## Training/Validation Loss Graph:
 
-![Training/Validation Loss](Experiment3/loss_plot.png)
+![Training/Validation Loss](loss_plot.png)
 
 # Conclusions
 

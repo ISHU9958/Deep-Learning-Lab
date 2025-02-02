@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # Convolutional Neural Networks (CNNs)
 
 Convolutional Neural Networks (CNNs) are a type of deep learning architecture specifically designed for image processing and recognition tasks. They use convolutional layers to extract features from images, followed by pooling layers for dimensionality reduction and fully connected layers for classification. CNNs are widely used in applications such as medical image analysis, object detection, and facial recognition.
@@ -71,32 +72,17 @@ ResNet-18 is a deep convolutional network designed to overcome vanishing gradien
 
 ## Training/Validation Accuracy Graph:
 
-![Training/Validation Accuracy](Experiment3/accuracy_plot.png)
+![Training/Validation Accuracy](accuracy_plot.png)
 
 ## Training/Validation Loss Graph:
 
-![Training/Validation Loss](Experiment3/loss_plot.png)
+![Training/Validation Loss](loss_plot.png)
 
 # Conclusions
 
 - The choice of activation function, weight initialization, and optimizer significantly impacts CNN performance.
 - ResNet-18 outperforms the best CNN model in terms of generalization and accuracy.
 - The Adam optimizer combined with ReLU activation provides the best balance between convergence speed and accuracy.
-- Future work can explore deeper architectures or fine-tuning ResNet-18 for specific datasets to achieve higher accuracy.
-=======
-# Deep Learning Lab
+- # Future work can explore deeper architectures or fine-tuning ResNet-18 for specific datasets to achieve higher accuracy.
 
-This repository contains a collection of experiments conducted as part of the Deep Learning Lab course. Each experiment explores different aspects of deep learning, machine learning, and data analysis using various libraries and tools.
-
-## Experiments
-
-### Experiment 1: MNIST using NumPy
-In this experiment, we implement a neural network to classify the MNIST dataset using only NumPy, focusing on the fundamentals of training a neural network without relying on high-level libraries like TensorFlow or PyTorch.
-
-### Experiment 2: Analyze Non-Linear Dataset using scikit-learn
-This experiment explores analyzing and modeling a non-linear dataset using the scikit-learn library. It includes preprocessing, feature engineering, and applying various machine learning models to solve the classification problem.
-
-### Experiment 3: CNN Implementation
-In this experiment, we implement a Convolutional Neural Network (CNN) from scratch to classify images. The goal is to understand the inner workings of a CNN, including convolutional layers, pooling layers, and fully connected layers, using a dataset such as MNIST or CIFAR-10. We focus on the architecture design, training process, and evaluation of the model's performance.
-
->>>>>>> 397e07eda5106d64a19823b47e233dccf8b59f56
+> > > > > > > 397e07eda5106d64a19823b47e233dccf8b59f56

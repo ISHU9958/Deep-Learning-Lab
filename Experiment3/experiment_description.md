@@ -1,0 +1,102 @@
+<<<<<<< HEAD
+# Convolutional Neural Networks (CNNs)
+
+Convolutional Neural Networks (CNNs) are a type of deep learning architecture specifically designed for image processing and recognition tasks. They use convolutional layers to extract features from images, followed by pooling layers for dimensionality reduction and fully connected layers for classification. CNNs are widely used in applications such as medical image analysis, object detection, and facial recognition.
+
+## Weight Initialization Techniques
+
+Weight initialization is crucial in training deep neural networks as it influences the convergence speed and overall model performance. Common weight initialization techniques include:
+
+- **Random Initialization**: Assigning small random values to weights.
+- **Xavier/Glorot Initialization**: Designed for sigmoid/tanh activation functions.
+- **He Initialization**: Optimal for ReLU activation, preventing vanishing/exploding gradients.
+
+## Activation Functions
+
+Activation functions introduce non-linearity to neural networks, enabling them to learn complex patterns. Common activation functions include:
+
+- **ReLU (Rectified Linear Unit)**: Most commonly used in CNNs due to efficient gradient propagation.
+- **Sigmoid**: Maps values between 0 and 1, mainly used in binary classification.
+- **Tanh**: Similar to sigmoid but ranges from -1 to 1, reducing bias shift.
+
+## Optimizers
+
+Optimizers adjust the network's weights to minimize the loss function. Common optimizers include:
+
+- **SGD (Stochastic Gradient Descent)**: Basic optimizer with momentum-based improvements.
+- **Adam (Adaptive Moment Estimation)**: Combines momentum and adaptive learning rates for better convergence.
+- **RMSprop**: Adapts learning rates based on gradient magnitude, suitable for recurrent networks.
+
+## ResNet (Residual Networks)
+
+ResNet-18 is a deep convolutional network designed to overcome vanishing gradient problems using skip connections (residual learning). It enables training very deep networks without performance degradation, making it highly effective for image classification tasks.
+
+# Experimental Results
+
+## Tabulated Results for Different Configurations
+
+| Configuration | Activation Function | Weight Initialization | Optimizer | Accuracy | Loss |
+| ------------- | ------------------- | --------------------- | --------- | -------- | ---- |
+| 1             | ReLU                | Xavier                | SGD       | 52.03    | 0.78 |
+| 2             | ReLU                | Xavier                | Adam      | 55.34    | 0.69 |
+| 3             | ReLU                | Xavier                | RMSprop   | 53.90    | 0.69 |
+| 4             | ReLU                | Kaiming               | SGD       | 51.78    | 0.76 |
+| 5             | ReLU                | Kaiming               | Adam      | 61.34    | 0.69 |
+| 6             | ReLU                | Kaiming               | RMSprop   | 49.78    | 0.69 |
+| 7             | ReLU                | Random                | SGD       | 51.78    | 0.70 |
+| 8             | ReLU                | Random                | Adam      | 57.62    | 0.69 |
+| 9             | ReLU                | Random                | RMSprop   | 49.78    | 0.70 |
+| 10            | Sigmoid             | Xavier                | SGD       | 51.78    | 0.70 |
+| 11            | Sigmoid             | Xavier                | Adam      | 57.62    | 0.69 |
+| 12            | Sigmoid             | Xavier                | RMSprop   | 49.78    | 0.70 |
+| 13            | Sigmoid             | Kaiming               | SGD       | 51.78    | 0.70 |
+| 14            | Sigmoid             | Kaiming               | Adam      | 57.62    | 0.69 |
+| 15            | Sigmoid             | Kaiming               | RMSprop   | 49.78    | 0.70 |
+| 16            | Sigmoid             | Random                | SGD       | 51.78    | 0.70 |
+| 17            | Sigmoid             | Random                | Adam      | 57.62    | 0.69 |
+| 18            | Sigmoid             | Random                | RMSprop   | 49.78    | 0.70 |
+| 19            | Tanh                | Xavier                | SGD       | 51.78    | 0.70 |
+| 20            | Tanh                | Xavier                | Adam      | 57.62    | 0.69 |
+| 21            | Tanh                | Xavier                | RMSprop   | 49.78    | 0.70 |
+| 22            | Tanh                | Kaiming               | SGD       | 51.78    | 0.70 |
+| 23            | Tanh                | Kaiming               | Adam      | 57.62    | 0.69 |
+| 24            | Tanh                | Kaiming               | RMSprop   | 49.78    | 0.70 |
+| 25            | Tanh                | Random                | SGD       | 51.78    | 0.70 |
+| 26            | Tanh                | Random                | Adam      | 57.62    | 0.69 |
+| 27            | Tanh                | Random                | RMSprop   | 49.78    | 0.70 |
+
+**Best-Performing Model**: Based on accuracy and loss, the best configuration consists of the ReLU activation function, Kaiming weight initialization, and the Adam optimizer.
+
+# Plots
+
+## Training/Validation Accuracy Graph:
+
+![Training/Validation Accuracy](Experiment3/accuracy_plot.png)
+
+## Training/Validation Loss Graph:
+
+![Training/Validation Loss](Experiment3/loss_plot.png)
+
+# Conclusions
+
+- The choice of activation function, weight initialization, and optimizer significantly impacts CNN performance.
+- ResNet-18 outperforms the best CNN model in terms of generalization and accuracy.
+- The Adam optimizer combined with ReLU activation provides the best balance between convergence speed and accuracy.
+- Future work can explore deeper architectures or fine-tuning ResNet-18 for specific datasets to achieve higher accuracy.
+=======
+# Deep Learning Lab
+
+This repository contains a collection of experiments conducted as part of the Deep Learning Lab course. Each experiment explores different aspects of deep learning, machine learning, and data analysis using various libraries and tools.
+
+## Experiments
+
+### Experiment 1: MNIST using NumPy
+In this experiment, we implement a neural network to classify the MNIST dataset using only NumPy, focusing on the fundamentals of training a neural network without relying on high-level libraries like TensorFlow or PyTorch.
+
+### Experiment 2: Analyze Non-Linear Dataset using scikit-learn
+This experiment explores analyzing and modeling a non-linear dataset using the scikit-learn library. It includes preprocessing, feature engineering, and applying various machine learning models to solve the classification problem.
+
+### Experiment 3: CNN Implementation
+In this experiment, we implement a Convolutional Neural Network (CNN) from scratch to classify images. The goal is to understand the inner workings of a CNN, including convolutional layers, pooling layers, and fully connected layers, using a dataset such as MNIST or CIFAR-10. We focus on the architecture design, training process, and evaluation of the model's performance.
+
+>>>>>>> 397e07eda5106d64a19823b47e233dccf8b59f56

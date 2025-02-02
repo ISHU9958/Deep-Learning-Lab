@@ -83,6 +83,13 @@ ResNet-18 is a deep convolutional network designed to overcome vanishing gradien
 - The choice of activation function, weight initialization, and optimizer significantly impacts CNN performance.
 - ResNet-18 outperforms the best CNN model in terms of generalization and accuracy.
 - The Adam optimizer combined with ReLU activation provides the best balance between convergence speed and accuracy.
+<<<<<<< HEAD
 - # Future work can explore deeper architectures or fine-tuning ResNet-18 for specific datasets to achieve higher accuracy.
 
 > > > > > > > 397e07eda5106d64a19823b47e233dccf8b59f56
+=======
+- Future work can explore deeper architectures or fine-tuning ResNet-18 for specific datasets to achieve higher accuracy.
+=======
+
+>>>>>>> 397e07eda5106d64a19823b47e233dccf8b59f56
+>>>>>>> 73058a6432d9566837e80825f7eaca12a4c6e992
